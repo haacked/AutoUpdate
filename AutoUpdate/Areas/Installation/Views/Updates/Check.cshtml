@@ -1,0 +1,21 @@
+﻿@model AutoUpdate.InstallationState
+
+@{
+    ViewBag.Title = "Checking For Updates";
+}
+
+<h1>Currently Installed</h1>
+<div>
+    @Model.Installed.Id @Model.Installed.Version
+</div>
+
+
+@if (Model.Update != null) {
+    <h2>Update Available</h2>
+
+    <ul>
+        <li>@Model.Update.Id @Model.Update.Version [@Html.ActionLink("Install", "Upgrade")]</li>
+    </ul>
+} else {
+    <h2>No Updates Available</h2>
+}
