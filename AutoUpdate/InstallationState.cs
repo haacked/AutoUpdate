@@ -2,13 +2,10 @@
 
 namespace AutoUpdate
 {
-    namespace AutoUpdate
+    public class InstallationState
     {
-        public class InstallationState
-        {
-            public IPackage Installed { get; set; }
+        public IPackage Installed { get; set; }
 
-            public IPackage Update { get; set; }
-        }
+        public IPackage Update { get; set; }
     }
 }
