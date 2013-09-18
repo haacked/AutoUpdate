@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoUpdate">
-      <HintPath>..\packages\AutoUpdate.0.1.0\lib\AutoUpdate.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -87,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Installation\InstallationAreaRegistration.cs" />
+    <Compile Include="InstallationState.cs" />
     <Compile Include="Controllers\UpdatesController.cs" />
     <Compile Include="PackageIdFilter.cs" />
     <Compile Include="WebProjectManager.cs" />

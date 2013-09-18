@@ -27,6 +27,6 @@ using System.Runtime.InteropServices;
 internal static class AssemblyConstants
 {
     internal const string AssemblyVersion = PackageVersion + ".0";
-    internal const string PackageVersion = "0.0.3";
+    internal const string PackageVersion = "0.3.0";
     internal const string PrereleaseVersion = ""; // Until we ship 1.0, this isn't necessary.
 }
